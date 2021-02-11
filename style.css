@@ -65,13 +65,16 @@ area:hover, area:active, area:focus {
 }
 
 #navContainer {
-    background-color: pink;
+    /* background-color: pink; */
+    background-color: hsl(255, 89%, 64%);
+
 }
 
 h1 {
     background-color: darkgoldenrod;
     color: darkgreen;
     text-indent: 1em;
+    opacity: 0.4;
 }
 
 h2 {
@@ -84,3 +87,8 @@ h2 {
     font-weight: 900;
     text-shadow: 1em 1em 1em blue;
 }
+
+.thisOne {
+    background-color: magenta;
+    opacity: 0.587412526426251;
+  }
