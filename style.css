@@ -13,6 +13,31 @@ body {
     height: 1.5em;
 }
 
+.container, #container1, #container2, #container3, #container4 {
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.container {
+    background-image: linear-gradient(red, yellow);
+}
+
+#container1 {
+    background-image: repeating-linear-gradient(to right, pink 40%, purple 60%);
+}
+
+#container2 {
+    background-image: linear-gradient(to left, green, rgba(0, 0, 255, 0.048));
+}
+
+#container3 {
+    background-image: linear-gradient(to bottom left, grey, orange);
+}
+
+#container4 {
+    background-image: linear-gradient(to bottom right, red, yellow, pink, green, violet, purple, blue, gold);
+}
+
 .imgLink {
     display: inline;
 }
@@ -31,9 +56,7 @@ area {
     outline-color: darkgreen;
 }
 
-area:hover,
-area:active,
-area:focus {
+area:hover, area:active, area:focus {
     outline-color: orange;
 }
 
