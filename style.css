@@ -3,9 +3,9 @@ body {
     font-family: "Jokerman", Arial, Helvetica, sans-serif;
     text-align: center;
     cursor: default;
-    background-image: url(food.jpg);
+    /* background-image: url(food.jpg);
     background-size: 57em 25em;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 #skills {
@@ -20,6 +20,21 @@ body {
 .imgLink1, .imgLink2 {
     border: solid black 0.3em;
     margin-bottom: 1em;
+}
+
+.foodImg {
+    width: 45em;
+    height: 28em;
+}
+
+area {
+    outline-color: darkgreen;
+}
+
+area:hover,
+area:active,
+area:focus {
+    outline-color: orange;
 }
 
 .img {
