@@ -8,6 +8,18 @@ body {
     background-repeat: no-repeat; */
 }
 
+.floatingNav {
+    float: left;
+    border: solid;
+    width: 5em;
+    height: 18em;
+}
+
+.main p {
+    margin-left: 6em;
+    text-align: left;
+}
+
 #skills {
     width: 30em;
     height: 1.5em;
@@ -67,7 +79,6 @@ area:hover, area:active, area:focus {
 #navContainer {
     /* background-color: pink; */
     background-color: hsl(312, 89%, 64%);
-
 }
 
 h1 {
@@ -75,6 +86,14 @@ h1 {
     color: darkgreen;
     text-indent: 1em;
     opacity: 0.4;
+}
+
+h1:hover {
+    color: blue;
+}
+
+h1:active {
+    color: pink;
 }
 
 h2 {
@@ -91,4 +110,4 @@ h2 {
 .thisOne {
     background-color: magenta;
     opacity: 0.587412526426251;
-  }
+}
