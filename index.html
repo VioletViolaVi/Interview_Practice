@@ -6,10 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="print">
     <title>Practice: IT Career Switch</title>
 </head>
 
 <body>
+
+    <div>
+        <picture>
+            <source media="(min-width:1366px)" srcset="food1.jpg">
+            <source media="(min-width:1200px)" srcset="food2.jpg">
+            <source media="(min-width:992px)" srcset="food3.jpg">
+            <source media="(min-width:768px)" srcset="food4.jpg">
+            <source media="(min-width:576px)" srcset="food5.jpg">
+            <source media="(min-width:320px)" srcset="food6.jpg">
+            <img src="food7.jpg" alt="food" width="500em">
+        </picture>
+    </div>
+
+    <div>
+
+        <nav>
+            Home | Shop | Contact
+        </nav>
+
+        <aside>
+            This is the aside.
+        </aside>
+
+        <main>
+            This is the main.
+        </main>
+
+        <footer>
+            Copyright &copy;
+        </footer>
+
+    </div>
+
     <div>
 
         <div id="wrapper">
@@ -97,7 +132,7 @@
             red, yellow, pink, green, violet, purple, blue, gold
         </div>
 
-        <img usemap="#food" class="foodImg" src="food.jpg" alt="Picture of some food.">
+        <img usemap="#food" class="foodImg" src="food1.jpg" alt="Picture of some food.">
 
         <map name="food">
             <area shape="circle" coords="290,290,95"
