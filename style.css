@@ -1,12 +1,139 @@
 body {
     background-color: #eeeeee;
-    font-family: "Jokerman", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     cursor: default;
     /* background-image: url(food.jpg);
     background-size: 57em 25em;
     background-repeat: no-repeat; */
 }
+
+table {
+    margin: 2em auto;
+    background-color: lightyellow;
+    padding: 1em 2em;
+    border: solid forestgreen 0.2em;
+    /* border-collapse: collapse; */
+    width: 80%;
+    border-spacing: 1em;
+}
+
+th, td {
+    padding: 1em;
+}
+
+th {
+    border: solid 0.2em chartreuse;
+    padding: 1em;
+}
+
+td {
+    border: solid 0.2em deeppink;
+}
+
+th:first-child {
+    background-color: orange;
+}
+
+th:nth-child(2) {
+    background-color: khaki;
+}
+
+th:last-child {
+    background-color: indianred;
+}
+
+td:first-child {
+    background-color: teal;
+}
+
+td:nth-child(2) {
+    background-color: mediumorchid;
+}
+
+td:last-child {
+    background-color: wheat;
+}
+
+dt {
+    border-bottom: solid paleturquoise 0.1em;
+    font-weight: 900;
+}
+
+.flex_or_grid_container.container {
+    padding: 0em;
+}
+
+.flex_or_grid_container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: row; AND flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* grid-row-gap: 0.1em; AND grid-column-gap: 2em; */
+    /* grid-gap: 0.1em 2em; */
+    display: inline-grid;
+    grid-gap: 0.2em;
+    grid-template-columns: 20em auto auto 13em auto;
+}
+
+.flex_or_grid_items {
+    padding: 2.5em;
+    margin: 0.5em;
+    background-color: greenyellow;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.six {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.eight {
+    grid-column: 2 / 4;
+}
+
+.ten {
+    grid-row: 1 / 4;
+}
+
+.tweleve {
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.fourteen {
+    grid-area: 2 / 1 / 6 / 3;
+}
+
+.sixteen {
+    grid-row: 1 / span 4;
+}
+
+.twenty {
+    grid-column: 3 / span 4;
+}
+
+/* #one {
+    order: 3; */
+
+/* flex-grow: 3; AND flex-shrink: 6; AND flex-basis:200px; */
+
+/* flex: 3 6 200px;
+}
+
+#two {
+    order: 1;
+    flex-grow: 5;
+    align-self: flex-start;
+}
+
+#three {
+    order: 2;
+    flex-grow: 5;
+    align-self: flex-end;
+} */
 
 .floatingNav {
     float: left;
