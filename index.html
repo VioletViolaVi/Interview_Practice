@@ -9,15 +9,45 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="style.css" media="print">
     <title>Practice: IT Career Switch</title>
+
+    <style>
+        canvas {
+            border: 2px solid green;
+        }
+
+        #pointer {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
     <div>
+
+        <details>
+            <summary>Click to Reveal the text!</summary>
+            <p>This is the hidden text that you have now revealed!</p>
+        </details>
+
+        <video id="vid" height="150" controls poster="media/food1.jpg">
+            <source src="media/beachVid.mp4" type="video/mp4">
+            <!-- you should the same video from 2 different sources however -->
+            Your browser does not support video elements. Oh well!
+        </video>
+
+        <audio id="sound" controls autoplay muted>
+            <source src="media/gameover.wav" type="audio/mp4">
+            <!-- you should the same audio from 2 different sources however -->
+            Your browser does not support audio elements. Oh well!
+        </audio>
+    </div>
+
+    <div>
         <table>
             <caption>Food And Drink!</caption>
             <tr>
-                <th colspan="5"  rowspan="2">Fruit</th>
+                <th colspan="5" rowspan="2">Fruit</th>
                 <th colspan="3">Veg</th>
                 <th>Drinks</th>
             </tr>
@@ -80,13 +110,13 @@
 
     <div>
         <picture>
-            <source media="(min-width:1366px)" srcset="food1.jpg">
-            <source media="(min-width:1200px)" srcset="food2.jpg">
-            <source media="(min-width:992px)" srcset="food3.jpg">
-            <source media="(min-width:768px)" srcset="food4.jpg">
-            <source media="(min-width:576px)" srcset="food5.jpg">
-            <source media="(min-width:320px)" srcset="food6.jpg">
-            <img src="food7.jpg" alt="food" width="500em">
+            <source media="(min-width:1366px)" srcset="media/food1.jpg">
+            <source media="(min-width:1200px)" srcset="media/food2.jpg">
+            <source media="(min-width:992px)" srcset="media/food3.jpg">
+            <source media="(min-width:768px)" srcset="media/food4.jpg">
+            <source media="(min-width:576px)" srcset="media/food5.jpg">
+            <source media="(min-width:320px)" srcset="media/food6.jpg">
+            <img src="media/food7.jpg" alt="food" width="500em">
         </picture>
     </div>
 
@@ -197,7 +227,7 @@
             red, yellow, pink, green, violet, purple, blue, gold
         </div>
 
-        <img usemap="#food" class="foodImg" src="food1.jpg" alt="Picture of some food.">
+        <img usemap="#food" class="foodImg" src="media/food1.jpg" alt="Picture of some food.">
 
         <map name="food">
             <area shape="circle" coords="290,290,95"
@@ -390,6 +420,24 @@
         </footer>
 
     </div>
+
+    <div>
+        <h1>The Canvas Element</h1>
+
+        <canvas id="myCanvas" width="400" height="175">
+            My Canvas
+        </canvas>
+
+        <h2>Using Javascript</h2>
+        <p onclick="alertMessage()" id="pointer">click this for an alert message via embedded Javascript</p>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript">
+        function alertMessage() {
+            alert("This is an alert message!");
+        };
+    </script>
 
 </body>
 

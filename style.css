@@ -8,6 +8,18 @@ body {
     background-repeat: no-repeat; */
 }
 
+details {
+    margin-bottom: 5em;
+}
+
+#vid {
+    transform: rotate(30deg);
+}
+
+#sound {
+    transform: rotate(-70deg);
+}
+
 table {
     margin: 2em auto;
     background-color: lightyellow;
