@@ -1,3 +1,1 @@
-# IT Career Switch
-
-Practice code with IT Career Switch.
+# Interview Practice
