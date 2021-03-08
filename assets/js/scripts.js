@@ -12,9 +12,25 @@
 //     }
 //   }
 // });
-// $("document").ready(function () {
 
-//   $("a").click(function () {
-//     $("li").toggle();
-//   });
-// });
+$("document").ready(function () {
+
+    console.log("hello world");
+
+  $("a").click(function () {
+    $("li").toggle();
+  });
+
+  $("#clickBtn").click(function () { 
+      $("p").append("<p>changed this text</p>").html();      
+  });
+
+
+
+
+
+
+
+
+
+});
