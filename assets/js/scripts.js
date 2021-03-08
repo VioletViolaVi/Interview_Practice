@@ -14,15 +14,18 @@
 // });
 
 $("document").ready(function () {
-
-    console.log("hello world");
+  console.log("hello world");
 
   $("a").click(function () {
     $("li").toggle();
   });
 
-  $("#clickBtn").click(function () { 
-      $("p").append("<p>changed this text</p>").html();      
+  $("#clickBtn").click(function () {
+    $("p").append("<p>changed this text</p>").html();
+  });
+
+  $("#clickBtn").on("click", () => {
+    console.log("this was logged on by the btn");
   });
 
 
